@@ -26,7 +26,7 @@ mkdir ~/Pictures/Wallpaper
 sudo cp ~/Downloads/Endeavour/Setup/Fonts/PCBius.ttf /usr/share/fonts/PCBius.ttf
 cp -r ~/Downloads/Endeavour/Pictures ~
 cp -r ~/Downloads/Endeavour/Setup/.zshrc ~
-cp -r ~/Downloads/Endeavour/Setup/Firefox/.mozilla ~/.mozilla
+cp -r ~/Downloads/Endeavour/Setup/.mozilla ~/.mozilla
 cp -r ~/Downloads/Endeavour/Setup ~
 rm -r ~/Downloads
 
