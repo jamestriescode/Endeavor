@@ -8,6 +8,7 @@ rm -r ~/Templates
 rm -r ~/Videos
 rm -r ~/Public
 rm ~/Xresources
+rm ~/.mozilla
 
 # Remove the zip file
 rm ~/Downloads/*.zip
@@ -21,12 +22,12 @@ echo "
 # Create wanted directories
 mkdir ~/.config/alacritty
 mkdir ~/Pictures/Wallpaper
+mkdir ~/GitHub
 
 # Take care of Downloads
 sudo cp ~/Downloads/Endeavour/Setup/Fonts/PCBius.ttf /usr/share/fonts/PCBius.ttf
 cp -r ~/Downloads/Endeavour/Pictures ~
 cp -r ~/Downloads/Endeavour/Setup/.zshrc ~
-cp -r ~/Downloads/Endeavour/Setup/.mozilla ~/.mozilla
 cp -r ~/Downloads/Endeavour/Setup ~
 rm -r ~/Downloads
 
@@ -43,6 +44,7 @@ echo "
 # Install packages
 sudo pacman -S --needed picom alacritty feh discord neofetch uwufetch htop python-pip bat tree git zsh lutris steam --noconfirm
 yay -S --needed cpufetch sublime-text-4 github-desktop-bin --noconfirm
+git clone https://github.com/arkenfox/user.js
 
 # Install wine
 sudo pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
