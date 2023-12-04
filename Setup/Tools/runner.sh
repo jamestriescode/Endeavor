@@ -8,7 +8,6 @@ rm -r ~/Templates
 rm -r ~/Videos
 rm -r ~/Public
 rm ~/Xresources
-rm ~/.mozilla
 
 # Remove the zip file
 rm ~/Downloads/*.zip
@@ -40,7 +39,6 @@ echo "
 # Install packages
 sudo pacman -S --needed picom alacritty feh discord neofetch uwufetch htop python-pip bat tree git zsh lutris steam --noconfirm
 yay -S --needed cpufetch sublime-text-4 github-desktop-bin --noconfirm
-git clone https://github.com/arkenfox/user.js
 
 # Install wine
 sudo pacman -S --needed wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls \
@@ -49,6 +47,11 @@ lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjp
 sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama \
 ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 \
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader --noconfirm
+
+# Set up user.js
+git clone https://github.com/arkenfox/user.js
+mv user.js/* ~/.mozilla/firefox/*.default-release
+rm -r user.js
 
 echo "
 
@@ -66,8 +69,6 @@ sudo pacman -Syu --needed
 sudo yay -Syu --needed
 
 echo "
-
-[!] MOVE ~/user.js TO .mozilla/[ROOT PROFILE PATH] AFTER REBOOT
 
 [!] REBOOTING IN 10...
 
