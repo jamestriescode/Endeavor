@@ -19,16 +19,13 @@ echo "
 
 "
 
-# Create wanted directories
+# Create alacritty config directory
 mkdir ~/.config/alacritty
-mkdir ~/Pictures/Wallpaper
 
-# Take care of Downloads
-sudo cp ~/Downloads/Endeavour/Setup/Fonts/PCBius.ttf /usr/share/fonts/PCBius.ttf
-cp -r ~/Downloads/Endeavour/Pictures ~
-cp -r ~/Downloads/Endeavour/Setup/.zshrc ~
-cp -r ~/Downloads/Endeavour/Setup ~
-rm -r ~/Downloads
+# Copy files over
+sudo cp /home/sargon/Github/Endeavor/Setup/Fonts/PCBius.ttf /usr/share/fonts
+cp /home/sargon/GitHub/Endeavor/Setup/.zshrc /home/sargon/.zshrc
+cp -r /home/sargon/GitHub/Endeavor/Pictures /home/sargon
 
 # Execute refresh.sh
 sudo chmod +x ~/Setup/Tools/refresh.sh
@@ -69,6 +66,8 @@ sudo pacman -Syu --needed
 sudo yay -Syu --needed
 
 echo "
+
+[!] MOVE ~/user.js TO .mozilla/[ROOT PROFILE PATH] AFTER REBOOT
 
 [!] REBOOTING IN 10...
 
