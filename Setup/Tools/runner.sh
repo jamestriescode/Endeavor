@@ -22,7 +22,6 @@ echo "
 # Create wanted directories
 mkdir ~/.config/alacritty
 mkdir ~/Pictures/Wallpaper
-mkdir ~/GitHub
 
 # Take care of Downloads
 sudo cp ~/Downloads/Endeavour/Setup/Fonts/PCBius.ttf /usr/share/fonts/PCBius.ttf
