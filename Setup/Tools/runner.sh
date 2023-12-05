@@ -2,15 +2,13 @@
 
 # Remove unwanted files and directories
 rm -r ~/Documents
+rm -r ~/Downloads
 rm -r ~/Music
 rm -r ~/Desktop
 rm -r ~/Templates
 rm -r ~/Videos
 rm -r ~/Public
 rm ~/Xresources
-
-# Remove the zip file
-rm ~/Downloads/*.zip
 
 echo "
 
@@ -23,9 +21,9 @@ mkdir ~/.config/alacritty
 mkdir ~/GitHub
 
 # Copy files over
-sudo cp /home/sargon/Github/Endeavor/Setup/Fonts/PCBius.ttf /usr/share/fonts
-cp /home/sargon/GitHub/Endeavor/Setup/.zshrc /home/sargon/.zshrc
-cp -r /home/sargon/GitHub/Endeavor/Pictures /home/sargon
+sudo cp /home/sargon/Endeavor/Setup/Fonts/PCBius.ttf /usr/share/fonts
+cp /home/sargon/Endeavor/Setup/.zshrc /home/sargon/.zshrc
+cp -r /home/sargon/Endeavor/Pictures /home/sargon
 mv ~/Endeavor ~/Github/Endeavor
 
 # Execute refresh.sh
@@ -53,7 +51,7 @@ lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader l
 # Set up user.js
 git clone https://github.com/arkenfox/user.js
 mv user.js/* ~/.mozilla/firefox/*.default-release
-rm -r user.js
+rm -rf user.js
 
 echo "
 
@@ -68,7 +66,7 @@ chsh -s /bin/zsh
 
 # Update system
 sudo pacman -Syu --needed
-sudo yay -Syu --needed
+yay -Syu --needed
 
 echo "
 
