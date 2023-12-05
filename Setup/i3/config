@@ -270,7 +270,7 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+a exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+shift+g exec --no-startup-id lutris
+bindsym $mod+g exec --no-startup-id lutris
 bindsym $mod+t exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+h exec --no-startup-id /usr/bin/github-desktop
