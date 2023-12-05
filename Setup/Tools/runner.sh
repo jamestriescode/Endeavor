@@ -50,7 +50,7 @@ lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader l
 
 # Set up user.js
 git clone https://github.com/arkenfox/user.js
-mv user.js/* ~/.mozilla/firefox/*.default-release
+cp -r user.js/* ~/.mozilla/firefox/*.default-release
 rm -rf user.js
 
 echo "
