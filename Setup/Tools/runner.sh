@@ -70,6 +70,33 @@ sudo yay -Syu --needed
 
 echo "
 
+[!] REBOOT REQUIRED TO SET UP ZSHELL
+
+"
+
+while :
+    do
+    echo "[?] WOULD YOU LIKE TO REBOOT? (Y/N)
+    
+    " 
+
+    read REBOOT
+
+    if [$REBOOT == 'N'] || [$REBOOT == 'n']; then
+        echo "
+        
+        [!] QUITTING...
+        
+        "
+        sleep 1
+        exit 0
+    else
+        break
+    fi
+done
+
+echo "
+
 [!] REBOOTING IN 10...
 
 "
