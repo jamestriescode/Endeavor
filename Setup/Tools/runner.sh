@@ -18,13 +18,15 @@ echo "
 
 "
 
-# Create alacritty config directory
+# Create directories
 mkdir ~/.config/alacritty
+mkdir ~/GitHub
 
 # Copy files over
 sudo cp /home/sargon/Github/Endeavor/Setup/Fonts/PCBius.ttf /usr/share/fonts
 cp /home/sargon/GitHub/Endeavor/Setup/.zshrc /home/sargon/.zshrc
 cp -r /home/sargon/GitHub/Endeavor/Pictures /home/sargon
+mv ~/Endeavor ~/Github/Endeavor
 
 # Execute refresh.sh
 sudo chmod +x ~/Setup/Tools/refresh.sh
