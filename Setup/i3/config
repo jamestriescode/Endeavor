@@ -274,7 +274,7 @@ bindsym $mod+g exec --no-startup-id lutris
 bindsym $mod+t exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+h exec --no-startup-id /usr/bin/github-desktop
-bindsym $mod+c exec --no-startup-id /usr/bin/subl
+bindsym $mod+c exec --no-startup-id /usr/bin/nvim
 bindsym $mod+w exec --no-startup-id firefox
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
