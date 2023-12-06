@@ -10,7 +10,7 @@ setopt PROMPT_SUBST
 
 # Prompts
 PROMPT='
-%F{yellow}<%m@%n><Directory: %~>(Git: ${vcs_info_msg_0_} >
+%F{yellow}<Directory: %~>-<Git: ${vcs_info_msg_0_} >
 →%f  '
 RPROMPT='%F{yellow}%* STATUS:%?'
 

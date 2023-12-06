@@ -18,6 +18,7 @@ echo "
 
 # Create directories
 mkdir ~/.config/alacritty
+mkdir ~/.config/nvim
 mkdir ~/GitHub
 
 # Copy files over
@@ -48,8 +49,10 @@ sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcryp
 ncurses lib32-ncurses ocl-icd lib32-ocl-icd libxslt lib32-libxslt libva lib32-libva gtk3 \
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader --noconfirm
 
-# Set up user.js
-git clone https://github.com/arkenfox/user.js
+# Clone git packages
+git clone httpa://github.com/sargoncodes/Projects ~/GitHub/
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth1
+git clone https://github.com/arkenfox/user.j
 cp -r user.js/* ~/.mozilla/firefox/*.default-release
 rm -rf user.js
 
