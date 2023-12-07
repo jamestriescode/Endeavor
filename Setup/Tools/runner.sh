@@ -39,7 +39,7 @@ echo "
 "
 
 # Install packages
-sudo pacman -S --needed picom neovim alacritty feh discord neofetch uwufetch htop python-pip bat tree git zsh lutris steam --noconfirm
+sudo pacman -S --needed picom w3m  neovim alacritty feh discord neofetch uwufetch htop python-pip bat tree git zsh lutris steam --noconfirm
 yay -S --needed cpufetch sublime-text-4 github-desktop-bin --noconfirm
 
 # Install wine
