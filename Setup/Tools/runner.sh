@@ -52,7 +52,6 @@ lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader l
 
 # Clone git packages
 git clone httpa://github.com/sargoncodes/Projects ~/GitHub/
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth1
 git clone https://github.com/arkenfox/user.j
 git clone https://github.com/sargoncodes/Projects ~/GitHub/
 git clone https://github.com/arkenfox/user.j ~/.mozilla/firefox/
