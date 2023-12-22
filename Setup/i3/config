@@ -271,6 +271,7 @@ bindsym $mod+a exec --no-startup-id /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+g exec --no-startup-id lutris
+bindsym $mod+s exec --no-startup-id steam
 bindsym $mod+t exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id discord
 bindsym $mod+h exec --no-startup-id /usr/bin/github-desktop
