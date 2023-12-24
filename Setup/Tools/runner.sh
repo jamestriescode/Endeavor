@@ -25,7 +25,6 @@ mkdir ~/GitHub
 sudo cp /home/sargon/Endeavor/Setup/Fonts/PCBius.ttf /usr/share/fonts
 cp /home/sargon/Endeavor/Setup/.zshrc /home/sargon/.zshrc
 cp -r /home/sargon/Endeavor/Pictures /home/sargon
-cp -r /home/sargon/Endeavor/Setup/nvim /home/sargpn/.config/
 mv ~/Endeavor ~/Github/Endeavor
 
 # Execute refresh.sh
@@ -54,7 +53,6 @@ lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader l
 git clone httpa://github.com/sargoncodes/Projects ~/GitHub/
 git clone https://github.com/arkenfox/user.j
 git clone https://github.com/sargoncodes/Projects ~/GitHub/
-git clone https://github.com/arkenfox/user.j ~/.mozilla/firefox/
 cp -r user.js/* ~/.mozilla/firefox/*.default-release
 rm -rf ~/.mozilla/firefox/user.js
 
