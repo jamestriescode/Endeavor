@@ -53,8 +53,6 @@ lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader l
 git clone httpa://github.com/sargoncodes/Projects ~/GitHub/
 git clone https://github.com/arkenfox/user.j
 git clone https://github.com/sargoncodes/Projects ~/GitHub/
-cp -r user.js/* ~/.mozilla/firefox/*.default-release
-rm -rf ~/.mozilla/firefox/user.js
 
 echo "
 
